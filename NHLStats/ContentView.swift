@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var hockeyList = HockeyTeamListModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        Text("hi")
     }
 }
 

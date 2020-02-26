@@ -15,6 +15,9 @@
 		B06FA4DD2405FBD0004F9E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06FA4DB2405FBD0004F9E49 /* LaunchScreen.storyboard */; };
 		B06FA4E82405FBD0004F9E49 /* NHLStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA4E72405FBD0004F9E49 /* NHLStatsTests.swift */; };
 		B06FA4F32405FBD0004F9E49 /* NHLStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA4F22405FBD0004F9E49 /* NHLStatsUITests.swift */; };
+		B06FA50724060E47004F9E49 /* TeamsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA50624060E47004F9E49 /* TeamsWebService.swift */; };
+		B06FA50E24062B80004F9E49 /* HockeyTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA50D24062B80004F9E49 /* HockeyTeams.swift */; };
+		B06FA51024062F75004F9E49 /* HockeyTeamListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA50F24062F75004F9E49 /* HockeyTeamListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B06FA4EE2405FBD0004F9E49 /* NHLStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHLStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06FA4F22405FBD0004F9E49 /* NHLStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLStatsUITests.swift; sourceTree = "<group>"; };
 		B06FA4F42405FBD0004F9E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06FA50624060E47004F9E49 /* TeamsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsWebService.swift; sourceTree = "<group>"; };
+		B06FA50D24062B80004F9E49 /* HockeyTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyTeams.swift; sourceTree = "<group>"; };
+		B06FA50F24062F75004F9E49 /* HockeyTeamListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyTeamListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		B06FA4CF2405FBCE004F9E49 /* NHLStats */ = {
 			isa = PBXGroup;
 			children = (
+				B06FA50A24061776004F9E49 /* View Models */,
+				B06FA501240602AE004F9E49 /* Services */,
+				B06FA50024060297004F9E49 /* Models */,
 				B06FA4D02405FBCE004F9E49 /* AppDelegate.swift */,
 				B06FA4D22405FBCE004F9E49 /* SceneDelegate.swift */,
 				B06FA4D42405FBCE004F9E49 /* ContentView.swift */,
@@ -134,6 +143,30 @@
 				B06FA4F42405FBD0004F9E49 /* Info.plist */,
 			);
 			path = NHLStatsUITests;
+			sourceTree = "<group>";
+		};
+		B06FA50024060297004F9E49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B06FA50D24062B80004F9E49 /* HockeyTeams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B06FA501240602AE004F9E49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B06FA50624060E47004F9E49 /* TeamsWebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B06FA50A24061776004F9E49 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B06FA50F24062F75004F9E49 /* HockeyTeamListModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06FA50E24062B80004F9E49 /* HockeyTeams.swift in Sources */,
 				B06FA4D12405FBCE004F9E49 /* AppDelegate.swift in Sources */,
 				B06FA4D32405FBCE004F9E49 /* SceneDelegate.swift in Sources */,
+				B06FA51024062F75004F9E49 /* HockeyTeamListModel.swift in Sources */,
 				B06FA4D52405FBCE004F9E49 /* ContentView.swift in Sources */,
+				B06FA50724060E47004F9E49 /* TeamsWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
